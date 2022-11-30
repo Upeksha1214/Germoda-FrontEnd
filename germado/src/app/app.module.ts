@@ -14,6 +14,7 @@ import { StudentRegistrationComponent } from './componet/student-registration/st
 import { StudentDashBoradComponent } from './componet/student-dash-borad/student-dash-borad.component';
 import { ClassSheduleComponent } from './componet/class-shedule/class-shedule.component';
 import { OnlineClassComponent } from './componet/online-class/online-class.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { OnlineClassComponent } from './componet/online-class/online-class.compo
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
