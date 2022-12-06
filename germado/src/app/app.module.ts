@@ -15,6 +15,7 @@ import { StudentDashBoradComponent } from './componet/student-dash-borad/student
 import { ClassSheduleComponent } from './componet/class-shedule/class-shedule.component';
 import { OnlineClassComponent } from './componet/online-class/online-class.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     StudentRegistrationComponent,
     StudentDashBoradComponent,
     ClassSheduleComponent,
-    OnlineClassComponent
+    OnlineClassComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
