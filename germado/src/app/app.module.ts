@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
+import { AppRoutingModule , routingComponents} from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './componet/login/login.component';
 import { NavbarComponent } from './componet/navbar/navbar.component';
@@ -16,6 +16,10 @@ import { ClassSheduleComponent } from './componet/class-shedule/class-shedule.co
 import { OnlineClassComponent } from './componet/online-class/online-class.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HomeComponent } from './componet/home/home.component';
+import { LoginDashBoradComponent } from './componet/login-dash-borad/login-dash-borad.component';
+// import { HomeModule } from './home/home/home.module';
+
+
 
 
 @NgModule({
@@ -32,12 +36,19 @@ import { HomeComponent } from './componet/home/home.component';
     StudentDashBoradComponent,
     ClassSheduleComponent,
     OnlineClassComponent,
-    HomeComponent
+    HomeComponent,
+    routingComponents,
+    LoginDashBoradComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    // HomeModule
+  ],
+  exports: [
+   NavbarComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
