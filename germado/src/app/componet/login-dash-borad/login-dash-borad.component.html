@@ -2,33 +2,17 @@
 <div class="userBackground d-flex justify-content-end">
     <div class="userSideBar">
         <div class="userButtonFrame">
-            <p class="my-5" data-bs-toggle="modal" data-bs-target="#exampleModal">LOGIN</p>
-
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered">
-                    <div class="modal-content bg-dark">
-                        <div class="modal-header">
-                            <div class="justify-content-center">
-                                <div class="row">
-                                    <p >Student</p>
-                                </div>
-                                <div class="row">
-                                    <p >Admin</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <a href="login">LOGIN</a>
+            
             <br/>
-            <a href="#" router-link="singup" >SIGN UP</a>
+            <a id="singUpName" href="singup"  >SIGN UP</a>
         </div>
     </div>
 </div>
 
 <style>
     .userBackground{
-    background: url("/src/Image/User.jpg");
+    background: url("../../../assets/img/dashborad1.jpg");
     background-size:cover;
     background-position: center center; 
     height: 100vh;
@@ -48,4 +32,6 @@
     margin: 60% 0% 0% 0%;
     text-align: center;
 }
+
+
 </style>
