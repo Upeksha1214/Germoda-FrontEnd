@@ -11,12 +11,15 @@ import { VideoComponent } from './componet/video/video.component';
 import { ArrangeTheOnlineClassComponent } from './componet/arrange-the-online-class/arrange-the-online-class.component';
 import { IncomeComponent } from './componet/income/income.component';
 import { StudentRegistrationComponent } from './componet/student-registration/student-registration.component';
-import { StudentDashBoradComponent } from './componet/student-dash-borad/student-dash-borad.component';
 import { ClassSheduleComponent } from './componet/class-shedule/class-shedule.component';
-import { OnlineClassComponent } from './componet/online-class/online-class.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HomeComponent } from './componet/home/home.component';
 import { LoginDashBoradComponent } from './componet/login-dash-borad/login-dash-borad.component';
+import { AboutComponent } from './componet/about/about.component';
+import { TrainersComponent } from './componet/trainers/trainers.component';
+import { CoursesComponent } from './componet/courses/courses.component';
+import { ContactComponent } from './componet/contact/contact.component';
+import { StudentProfileComponent } from './componet/student-profile/student-profile.component';
 // import { HomeModule } from './home/home/home.module';
 
 
@@ -33,12 +36,15 @@ import { LoginDashBoradComponent } from './componet/login-dash-borad/login-dash-
     ArrangeTheOnlineClassComponent,
     IncomeComponent,
     StudentRegistrationComponent,
-    StudentDashBoradComponent,
     ClassSheduleComponent,
-    OnlineClassComponent,
     HomeComponent,
     routingComponents,
     LoginDashBoradComponent,
+    AboutComponent,
+    TrainersComponent,
+    CoursesComponent,
+    ContactComponent,
+    StudentProfileComponent,
 
   ],
   imports: [
