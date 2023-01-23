@@ -13,6 +13,7 @@ import { VideoComponent } from './componet/video/video.component';
 import { ArrangeTheOnlineClassComponent } from './componet/arrange-the-online-class/arrange-the-online-class.component';
 import { StudentProfileComponent } from './componet/student-profile/student-profile.component';
 import { IncomeComponent } from './componet/income/income.component';
+import { StudentDashBoradComponent } from './componet/student-dash-borad/student-dash-borad.component';
 
 
 
@@ -32,6 +33,7 @@ const routes: Routes = [
   {path:'onlineClass', component: ArrangeTheOnlineClassComponent },
   {path:'studentProfile', component: StudentProfileComponent },
   {path:'income', component: IncomeComponent },
+  {path:'stuNavBar', component: StudentDashBoradComponent },
 
 ];
 

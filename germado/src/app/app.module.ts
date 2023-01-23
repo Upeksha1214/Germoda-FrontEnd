@@ -20,6 +20,11 @@ import { TrainersComponent } from './componet/trainers/trainers.component';
 import { CoursesComponent } from './componet/courses/courses.component';
 import { ContactComponent } from './componet/contact/contact.component';
 import { StudentProfileComponent } from './componet/student-profile/student-profile.component';
+import { RegisterClassComponent } from './componet/register-class/register-class.component';
+import { StudentViewVideosComponent } from './componet/student-view-videos/student-view-videos.component';
+import { StuViewFashionBlocksComponent } from './componet/stu-view-fashion-blocks/stu-view-fashion-blocks.component';
+import { StuClassSheduleComponent } from './componet/stu-class-shedule/stu-class-shedule.component';
+import { StudentDashBoradComponent } from './componet/student-dash-borad/student-dash-borad.component';
 // import { HomeModule } from './home/home/home.module';
 
 
@@ -45,6 +50,11 @@ import { StudentProfileComponent } from './componet/student-profile/student-prof
     CoursesComponent,
     ContactComponent,
     StudentProfileComponent,
+    RegisterClassComponent,
+    StudentViewVideosComponent,
+    StuViewFashionBlocksComponent,
+    StuClassSheduleComponent,
+    StudentDashBoradComponent,
 
   ],
   imports: [
