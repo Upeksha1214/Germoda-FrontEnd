@@ -14,7 +14,18 @@ export class SignUpComponent {
 
 
   saveData={
-    studentId:""
+    studentId:"",
+    name:"",
+    email:"",
+    address:"",
+    nic:"",
+    gender:"",
+    birthday:"",
+    courseName:"",
+    courseDuration:"",
+    olResult:"",
+    alResult:"",
+     
   }
 
   inputChange(student:any){
@@ -24,8 +35,6 @@ export class SignUpComponent {
   onSubmit(signUp:NgForm){
     console.log(this.saveData.studentId)
     
-    
-
     this.service.registerStudent(this.saveData)
   }
   

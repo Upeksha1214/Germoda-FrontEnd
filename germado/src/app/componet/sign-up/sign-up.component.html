@@ -29,31 +29,55 @@
                         <label class="form-label" for="form3Example1m">Student Id</label>
                       </div>
                     </div>
-                     <!-- <div class="col-md-6 mb-4">
+                     <div class="col-md-6 mb-4">
                       <div class="form-outline">
-                        <input type="text" id="form3Example1n" class="form-control"  />
+                        <input type="text" 
+                        id="form3Example1n" 
+                        class="form-control"
+                        name="name"
+                        [(ngModel)]="saveData.name"
+                        #sName="ngModel"
+                        (change)="inputChange(sName)"
+                        required  />
                         <label class="form-label" for="form3Example1n">Name</label>
                       </div>
-                    </div> -->
+                    </div>
                   </div>
   
-                  <!--<div class="row">
+                  <div class="row">
                     <div class="col-md-6 mb-4">
                       <div class="form-outline">
-                        <input type="text" id="form3Example1m1" class="form-control"  />
+                        <input type="text"
+                         id="form3Example1m1"
+                        class="form-control"
+                        name="email"
+                        [(ngModel)]="saveData.email"
+                        #sEmail="ngModel"
+                        (change)="inputChange(sEmail)"
+                        required  />
                         <label class="form-label" for="form3Example1m1">Email</label>
                       </div>
                     </div>
                     <div class="col-md-6 mb-4">
                       <div class="form-outline">
-                        <input type="text" id="form3Example1n1" class="form-control" />
+                        <input type="text" id="form3Example1n1" class="form-control" 
+                        name="address"
+                        [(ngModel)]="saveData.address"
+                        #sAddreaa="ngModel"
+                        (change)="inputChange(sAddreaa)"
+                        required/>
                         <label class="form-label" for="form3Example1n1">Address</label>
                       </div>
                     </div>
                   </div>
   
                   <div class="form-outline mb-4">
-                    <input type="text" id="form3Example8" class="form-control"  />
+                    <input type="text" id="form3Example8" class="form-control" 
+                    name="nic"
+                    [(ngModel)]="saveData.nic"
+                    #sNic="ngModel"
+                    (change)="inputChange(sNic)"
+                    required />
                     <label class="form-label" for="form3Example8">NIC</label>
                   </div>
   
@@ -63,25 +87,40 @@
   
                     <div class="form-check form-check-inline mb-0 me-4">
                       <input class="form-check-input" type="radio" name="inlineRadioOptions" id="femaleGender"
-                        value="option1" />
+                        value="option1" 
+                        name="gender"
+                        [(ngModel)]="saveData.gender"
+                        #sGender="ngModel"
+                        (change)="inputChange(sGender)"
+                        required/>
                       <label class="form-check-label" for="femaleGender">Female</label>
                     </div>
   
                     <div class="form-check form-check-inline mb-0 me-4">
                       <input class="form-check-input" type="radio" name="inlineRadioOptions" id="maleGender"
-                        value="option2" />
+                        value="option2" 
+                        name="gender"
+                        [(ngModel)]="saveData.gender"
+                        #sGender="ngModel"
+                        (change)="inputChange(sGender)"
+                        required/>
                       <label class="form-check-label" for="maleGender">Male</label>
                     </div>
   
                     <div class="form-check form-check-inline mb-0">
                       <input class="form-check-input" type="radio" name="inlineRadioOptions" id="otherGender"
-                        value="option3" />
+                        value="option3" 
+                        name="gender"
+                        [(ngModel)]="saveData.gender"
+                        #sGender="ngModel"
+                        (change)="inputChange(sGender)"
+                        required/>
                       <label class="form-check-label" for="otherGender">Other</label>
                     </div>
   
                   </div>
   
-                  <div class="row">
+                  <!-- <div class="row">
                     <div class="col-md-6 mb-4">
   
                       <select class="select">
@@ -102,32 +141,57 @@
                       </select>
   
                     </div>
-                  </div>
+                  </div> -->
   
                   <div class="form-outline mb-4">
-                    <input type="text" id="form3Example9" class="form-control"  />
+                    <input type="text" id="form3Example9" class="form-control"
+                    name="birthday"
+                    [(ngModel)]="saveData.birthday"
+                    #sBirthday="ngModel"
+                    (change)="inputChange(sBirthday)"
+                    required  />
                     <label class="form-label" for="form3Example9">DOB</label>
                   </div>
   
                   <div class="form-outline mb-4">
-                    <input type="text" id="form3Example90" class="form-control" />
+                    <input type="text" id="form3Example90" class="form-control"
+                    name="courseName"
+                    [(ngModel)]="saveData.courseName"
+                    #sCourseName="ngModel"
+                    (change)="inputChange(sCourseName)"
+                    required />
                     <label class="form-label" for="form3Example90">Course Name</label>
                   </div>
   
                   <div class="form-outline mb-4">
-                    <input type="text" id="form3Example99" class="form-control" />
+                    <input type="text" id="form3Example99" class="form-control" 
+                    name="courseDuration"
+                    [(ngModel)]="saveData.courseDuration"
+                    #sCourseDuration="ngModel"
+                    (change)="inputChange(sCourseDuration)"
+                    required/>
                     <label class="form-label" for="form3Example99">Course Duration</label>
                   </div>
   
                   <div class="form-outline mb-4">
-                    <input type="text" id="form3Example97" class="form-control" />
+                    <input type="text" id="form3Example97" class="form-control"
+                    name="olResult"
+                    [(ngModel)]="saveData.olResult"
+                    #sOlResult="ngModel"
+                    (change)="inputChange(sOlResult)"
+                    required />
                     <label class="form-label" for="form3Example97">Ol Result</label>
                   </div>
 
                   <div class="form-outline mb-4">
-                    <input type="text" id="form3Example97" class="form-control" />
+                    <input type="text" id="form3Example97" class="form-control"
+                    name="alResult"
+                    [(ngModel)]="saveData.alResult"
+                    #sAlResult="ngModel"
+                    (change)="inputChange(sAlResult)"
+                    required />
                     <label class="form-label" for="form3Example97">Al Result</label>
-                  </div> -->
+                  </div>
   
                   <div class="d-flex justify-content-end pt-3">
                     <button type="button" class="btn btn-light btn-lg">Reset all</button>
