@@ -24,7 +24,7 @@ export class SignUpComponent {
   onSubmit(signUp:NgForm){
     console.log(this.saveData.studentId)
     
-    debugger
+    
 
     this.service.registerStudent(this.saveData)
   }

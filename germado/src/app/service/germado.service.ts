@@ -12,6 +12,6 @@ export class GermadoService {
   constructor(private http:HttpClient) {}
 
   registerStudent(data:any){
-    return this.http.post(this.url_register,data)
+    return this.http.post(this.url_register,data).subscribe()
   }
 }
