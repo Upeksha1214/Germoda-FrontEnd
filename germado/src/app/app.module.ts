@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http'
 
 import { AppRoutingModule , routingComponents} from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -23,7 +25,6 @@ import { StudentProfileComponent } from './componet/student-profile/student-prof
 import { RegisterClassComponent } from './componet/register-class/register-class.component';
 import { StudentViewVideosComponent } from './componet/student-view-videos/student-view-videos.component';
 import { StuViewFashionBlocksComponent } from './componet/stu-view-fashion-blocks/stu-view-fashion-blocks.component';
-import { StuClassSheduleComponent } from './componet/stu-class-shedule/stu-class-shedule.component';
 import { StudentDashBoradComponent } from './componet/student-dash-borad/student-dash-borad.component';
 // import { HomeModule } from './home/home/home.module';
 
@@ -43,7 +44,7 @@ import { StudentDashBoradComponent } from './componet/student-dash-borad/student
     StudentRegistrationComponent,
     ClassSheduleComponent,
     HomeComponent,
-    routingComponents,
+    
     LoginDashBoradComponent,
     AboutComponent,
     TrainersComponent,
@@ -53,7 +54,7 @@ import { StudentDashBoradComponent } from './componet/student-dash-borad/student
     RegisterClassComponent,
     StudentViewVideosComponent,
     StuViewFashionBlocksComponent,
-    StuClassSheduleComponent,
+    
     StudentDashBoradComponent,
 
   ],
@@ -61,6 +62,8 @@ import { StudentDashBoradComponent } from './componet/student-dash-borad/student
     BrowserModule,
     AppRoutingModule,
     NgbModule,
+    FormsModule,
+    HttpClientModule,
     // HomeModule
   ],
   exports: [

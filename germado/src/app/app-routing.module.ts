@@ -14,6 +14,10 @@ import { ArrangeTheOnlineClassComponent } from './componet/arrange-the-online-cl
 import { StudentProfileComponent } from './componet/student-profile/student-profile.component';
 import { IncomeComponent } from './componet/income/income.component';
 import { StudentDashBoradComponent } from './componet/student-dash-borad/student-dash-borad.component';
+import { RegisterClassComponent } from './componet/register-class/register-class.component';
+import { StudentViewVideosComponent } from './componet/student-view-videos/student-view-videos.component';
+import { StuViewFashionBlocksComponent } from './componet/stu-view-fashion-blocks/stu-view-fashion-blocks.component';
+import { ClassSheduleComponent } from './componet/class-shedule/class-shedule.component';
 
 
 
@@ -34,6 +38,10 @@ const routes: Routes = [
   {path:'studentProfile', component: StudentProfileComponent },
   {path:'income', component: IncomeComponent },
   {path:'stuNavBar', component: StudentDashBoradComponent },
+  {path:'registerClass', component: RegisterClassComponent },
+  {path:'viewVideo', component: StudentViewVideosComponent },
+  {path:'fashionBlocks', component: StuViewFashionBlocksComponent },
+  {path:'classShedule', component: ClassSheduleComponent },
 
 ];
 
