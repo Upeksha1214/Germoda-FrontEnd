@@ -1,5 +1,4 @@
 import { TestBed } from '@angular/core/testing';
-
 import { GermadoService } from './germado.service';
 
 describe('GermadoService', () => {
