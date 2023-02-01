@@ -6,7 +6,7 @@ import { HttpClient} from '@angular/common/http';
 })
 export class GermadoService {
 
-  url_register='http://localhost:8000/student/studentAdd'
+  url_register=process.env['url_register'] ?? ""
 
 
   constructor(private http:HttpClient) {}
