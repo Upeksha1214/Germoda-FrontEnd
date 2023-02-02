@@ -196,6 +196,7 @@ body {
     display: flex;
     list-style: none;
     align-items: center;
+    text-decoration: none;
   }
   
   .navbar li {
@@ -211,9 +212,10 @@ body {
     font-family: "Poppins", sans-serif;
     font-size: 15px;
     font-weight: 500;
-    color: #37423b;
+    color: #b95fcf;
     white-space: nowrap;
     transition: 0.3s;
+    text-decoration: none;
   }
   
   .navbar a i,

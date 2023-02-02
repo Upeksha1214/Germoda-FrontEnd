@@ -1,14 +1,19 @@
 import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { GermadoService } from 'src/app/service/germado.service';
-
+// import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-sign-up',
   templateUrl: './sign-up.component.html',
   styleUrls: ['./sign-up.component.css']
 })
+
 export class SignUpComponent {
+
+  // simpleAlert(){
+  //   Swal.fire("Success")
+  // }
 
   constructor(private service:GermadoService){}
 
@@ -17,6 +22,7 @@ export class SignUpComponent {
     studentId:"",
     name:"",
     email:"",
+    password:"",
     address:"",
     nic:"",
     gender:"",
@@ -25,6 +31,8 @@ export class SignUpComponent {
     courseDuration:"",
     olResult:"",
     alResult:"",
+    country:"",
+    state:"",
      
   }
 

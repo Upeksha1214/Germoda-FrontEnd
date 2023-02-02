@@ -1,126 +1,100 @@
 <section class="h-100 bg-dark">
-    <div class="container py-5 h-100">
-      <div class="row d-flex justify-content-center align-items-center h-100">
-        <div class="col">
-          <div class="card card-registration my-4">
-            <div class="row g-0">
-              <div class="col-xl-6 d-none d-xl-block">
-                <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/img4.webp"
-                  alt="Sample photo" class="img-fluid"
-                  style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;" />
-              </div>
-              
-              <form (ngSubmit)="onSubmit(Singup)" #Singup="ngForm" class="col-xl-6" >
-                <div class="card-body p-md-5 text-black">
-                  <h3 class="mb-5 text-uppercase">Student registration form</h3>
-  
-                  <div class="row">
-                    <div class="col-md-6 mb-4">
-                      <div class="form-outline">
-                        <input type="text" 
-                                id="form3Example1m" 
-                                class="form-control"
-                                name="studentId"
-                                [(ngModel)]="saveData.studentId"
-                                #sId="ngModel"
-                                (change)="inputChange(sId)"
-                                required
-                                  />
-                        <label class="form-label" for="form3Example1m">Student Id</label>
-                      </div>
-                    </div>
-                     <div class="col-md-6 mb-4">
-                      <div class="form-outline">
-                        <input type="text" 
-                        id="form3Example1n" 
-                        class="form-control"
-                        name="name"
-                        [(ngModel)]="saveData.name"
-                        #sName="ngModel"
-                        (change)="inputChange(sName)"
-                        required  />
-                        <label class="form-label" for="form3Example1n">Name</label>
-                      </div>
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col">
+        <div class="card card-registration my-4">
+          <div class="row g-0">
+            <div class="col-xl-6 d-none d-xl-block">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/img4.webp"
+                alt="Sample photo" class="img-fluid"
+                style="border-top-left-radius: .25rem; border-bottom-left-radius: .25rem;" />
+            </div>
+
+            <form (ngSubmit)="onSubmit(Singup)" #Singup="ngForm" class="col-xl-6">
+              <div class="card-body p-md-5 text-black">
+                <h3 class="mb-5 text-uppercase">Student registration form</h3>
+
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <input type="text" id="form3Example1m" class="form-control" name="studentId"
+                        [(ngModel)]="saveData.studentId" #sId="ngModel" (change)="inputChange(sId)" required />
+                      <label class="form-label" for="form3Example1m">Student Id</label>
                     </div>
                   </div>
-  
-                  <div class="row">
-                    <div class="col-md-6 mb-4">
-                      <div class="form-outline">
-                        <input type="text"
-                         id="form3Example1m1"
-                        class="form-control"
-                        name="email"
-                        [(ngModel)]="saveData.email"
-                        #sEmail="ngModel"
-                        (change)="inputChange(sEmail)"
-                        required  />
-                        <label class="form-label" for="form3Example1m1">Email</label>
-                      </div>
-                    </div>
-                    <div class="col-md-6 mb-4">
-                      <div class="form-outline">
-                        <input type="text" id="form3Example1n1" class="form-control" 
-                        name="address"
-                        [(ngModel)]="saveData.address"
-                        #sAddreaa="ngModel"
-                        (change)="inputChange(sAddreaa)"
-                        required/>
-                        <label class="form-label" for="form3Example1n1">Address</label>
-                      </div>
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <input type="text" id="form3Example1n" class="form-control" name="name"
+                        [(ngModel)]="saveData.name" #sName="ngModel" (change)="inputChange(sName)" required />
+                      <label class="form-label" for="form3Example1n">Name</label>
                     </div>
                   </div>
-  
-                  <div class="form-outline mb-4">
-                    <input type="text" id="form3Example8" class="form-control" 
-                    name="nic"
-                    [(ngModel)]="saveData.nic"
-                    #sNic="ngModel"
-                    (change)="inputChange(sNic)"
-                    required />
-                    <label class="form-label" for="form3Example8">NIC</label>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <input type="text" id="form3Example1m1" class="form-control" name="email"
+                        [(ngModel)]="saveData.email" #sEmail="ngModel" (change)="inputChange(sEmail)" required />
+                      <label class="form-label" for="form3Example1m1">Email</label>
+                    </div>
                   </div>
-  
-                  <div class="d-md-flex justify-content-start align-items-center mb-4 py-2">
-  
-                    <h6 class="mb-0 me-4">Gender: </h6>
-  
-                    <div class="form-check form-check-inline mb-0 me-4">
-                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="femaleGender"
-                        value="option1" 
-                        name="gender"
-                        [(ngModel)]="saveData.gender"
-                        #sGender="ngModel"
-                        (change)="inputChange(sGender)"
-                        required/>
-                      <label class="form-check-label" for="femaleGender">Female</label>
+
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <input type="text" id="form3Example1n1" class="form-control" name="password"
+                        [(ngModel)]="saveData.password" #sPassword="ngModel" (change)="inputChange(sPassword)" required />
+                      <label class="form-label" for="form3Example1n1">Password</label>
                     </div>
-  
-                    <div class="form-check form-check-inline mb-0 me-4">
-                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="maleGender"
-                        value="Male" 
-                        name="gender"
-                        [(ngModel)]="saveData.gender"
-                        #sGender="ngModel"
-                        (change)="inputChange(sGender)"
-                        required/>
-                      <label class="form-check-label" for="maleGender">Male</label>
-                    </div>
-  
-                    <div class="form-check form-check-inline mb-0">
-                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="otherGender"
-                        value="option3" 
-                        name="gender"
-                        [(ngModel)]="saveData.gender"
-                        #sGender="ngModel"
-                        (change)="inputChange(sGender)"
-                        required/>
-                      <label class="form-check-label" for="otherGender">Other</label>
-                    </div>
-  
                   </div>
-  
-                  <!-- <div class="row">
+                </div>
+
+
+                <div class="row">
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <input type="text" id="form3Example1n1" class="form-control" name="address"
+                        [(ngModel)]="saveData.address" #sAddreaa="ngModel" (change)="inputChange(sAddreaa)" required />
+                      <label class="form-label" for="form3Example1n1">Address</label>
+                    </div>
+                  </div>
+                  <div class="col-md-6 mb-4">
+                    <div class="form-outline">
+                      <input type="text" id="form3Example8" class="form-control" name="nic" [(ngModel)]="saveData.nic"
+                        #sNic="ngModel" (change)="inputChange(sNic)" required />
+                      <label class="form-label" for="form3Example8">NIC</label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="d-md-flex justify-content-start align-items-center mb-4 py-2">
+
+                  <h6 class="mb-0 me-4">Gender: </h6>
+
+                  <div class="form-check form-check-inline mb-0 me-4">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="femaleGender"
+                      value="female" name="gender" [(ngModel)]="saveData.gender" #sGender="ngModel"
+                      (change)="inputChange(sGender)" required />
+                    <label class="form-check-label" for="femaleGender">Female</label>
+                  </div>
+
+                  <div class="form-check form-check-inline mb-0 me-4">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="maleGender" value="male"
+                      name="gender" [(ngModel)]="saveData.gender" #sGender="ngModel" (change)="inputChange(sGender)"
+                      required />
+                    <label class="form-check-label" for="maleGender">Male</label>
+                  </div>
+
+                  <div class="form-check form-check-inline mb-0">
+                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="otherGender"
+                      value="other" name="gender" [(ngModel)]="saveData.gender" #sGender="ngModel"
+                      (change)="inputChange(sGender)" required />
+                    <label class="form-check-label" for="otherGender">Other</label>
+                  </div>
+
+                </div>
+
+                <!-- <div class="row">
                     <div class="col-md-6 mb-4">
   
                       <select class="select">
@@ -142,67 +116,50 @@
   
                     </div>
                   </div> -->
-  
-                  <div class="form-outline mb-4">
-                    <input type="text" id="form3Example9" class="form-control"
-                    name="birthday"
-                    [(ngModel)]="saveData.birthday"
-                    #sBirthday="ngModel"
-                    (change)="inputChange(sBirthday)"
-                    required  />
-                    <label class="form-label" for="form3Example9">DOB</label>
-                  </div>
-  
-                  <div class="form-outline mb-4">
-                    <input type="text" id="form3Example90" class="form-control"
-                    name="courseName"
-                    [(ngModel)]="saveData.courseName"
-                    #sCourseName="ngModel"
-                    (change)="inputChange(sCourseName)"
-                    required />
-                    <label class="form-label" for="form3Example90">Course Name</label>
-                  </div>
-  
-                  <div class="form-outline mb-4">
-                    <input type="text" id="form3Example99" class="form-control" 
-                    name="courseDuration"
-                    [(ngModel)]="saveData.courseDuration"
-                    #sCourseDuration="ngModel"
-                    (change)="inputChange(sCourseDuration)"
-                    required/>
-                    <label class="form-label" for="form3Example99">Course Duration</label>
-                  </div>
-  
-                  <!-- <div class="form-outline mb-4">
-                    <input type="text" id="form3Example97" class="form-control"
-                    name="olResult"
-                    [(ngModel)]="saveData.olResult"
-                    #sOlResult="ngModel"
-                    (change)="inputChange(sOlResult)"
-                    required />
-                    <label class="form-label" for="form3Example97">Ol Result</label>
-                  </div>
 
-                  <div class="form-outline mb-4">
-                    <input type="text" id="form3Example97" class="form-control"
-                    name="alResult"
-                    [(ngModel)]="saveData.alResult"
-                    #sAlResult="ngModel"
-                    (change)="inputChange(sAlResult)"
-                    required />
-                    <label class="form-label" for="form3Example97">Al Result</label>
-                  </div> -->
-  
-                  <div class="d-flex justify-content-end pt-3">
-                    <button type="button" class="btn btn-light btn-lg">Reset all</button>
-                    <button type="submit" class="btn btn-warning btn-lg ms-2">Submit form</button>
-                  </div>
-  
+                <div class="form-outline mb-4">
+                  <input type="date" id="form3Example9" class="form-control" name="birthday"
+                    [(ngModel)]="saveData.birthday" #sBirthday="ngModel" (change)="inputChange(sBirthday)" required />
+                  <label class="form-label" for="form3Example9">DOB</label>
                 </div>
-              </form>
-            </div>
+
+
+                <div class="form-outline mb-4">
+                  <input type="text" id="form3Example90" class="form-control" name="courseName"
+                    [(ngModel)]="saveData.courseName" #sCourseName="ngModel" (change)="inputChange(sCourseName)"
+                    required />
+                  <label class="form-label" for="form3Example90">Course Name</label>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <input type="text" id="form3Example99" class="form-control" name="courseDuration"
+                    [(ngModel)]="saveData.courseDuration" #sCourseDuration="ngModel"
+                    (change)="inputChange(sCourseDuration)" required />
+                  <label class="form-label" for="form3Example99">Course Duration</label>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <input type="text" id="form3Example97" class="form-control" name="country"
+                    [(ngModel)]="saveData.country" #sCountry="ngModel" (change)="inputChange(sCountry)" required />
+                  <label class="form-label" for="form3Example97">Country</label>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <input type="text" id="form3Example97" class="form-control" name="state" [(ngModel)]="saveData.state"
+                    #sState="ngModel" (change)="inputChange(sState)" required />
+                  <label class="form-label" for="form3Example97">State</label>
+                </div>
+
+                <div class="d-flex justify-content-end pt-3">
+                  <button type="button" class="btn btn-light btn-lg">Reset all</button>
+                  <button type="submit" class="btn btn-warning btn-lg ms-2">
+                    Submit form</button>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>

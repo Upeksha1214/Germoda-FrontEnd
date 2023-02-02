@@ -25,8 +25,9 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
+              
             ],
             "scripts": []
           },
@@ -96,6 +97,7 @@
               "germado/node_modules/bootstrap/dist/js/bootstrap.esm.min.js",
               "germado/node_modules/jquery/dist/jquery.min.js",
               "germado/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+              
             ]
           }
         }
