@@ -18,6 +18,7 @@ import { RegisterClassComponent } from './componet/register-class/register-class
 import { StudentViewVideosComponent } from './componet/student-view-videos/student-view-videos.component';
 import { StuViewFashionBlocksComponent } from './componet/stu-view-fashion-blocks/stu-view-fashion-blocks.component';
 import { ClassSheduleComponent } from './componet/class-shedule/class-shedule.component';
+import { AdminLoginComponent } from './componet/admin-login/admin-login.component';
 
 
 
@@ -42,6 +43,7 @@ const routes: Routes = [
   {path:'viewVideo', component: StudentViewVideosComponent },
   {path:'fashionBlocks', component: StuViewFashionBlocksComponent },
   {path:'classShedule', component: ClassSheduleComponent },
+  {path:'adminLogin', component: AdminLoginComponent}
 
 ];
 

@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { GermadoService } from 'src/app/service/germado.service';
-// import Swal from 'sweetalert2';
+import Swal from 'sweetalert2';
 
 @Component({
   selector: 'app-sign-up',
@@ -11,9 +11,9 @@ import { GermadoService } from 'src/app/service/germado.service';
 
 export class SignUpComponent {
 
-  // simpleAlert(){
-  //   Swal.fire("Success")
-  // }
+  simpleAlert(){
+    Swal.fire("Success")
+  }
 
   constructor(private service:GermadoService){}
 

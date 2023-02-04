@@ -26,6 +26,7 @@ import { RegisterClassComponent } from './componet/register-class/register-class
 import { StudentViewVideosComponent } from './componet/student-view-videos/student-view-videos.component';
 import { StuViewFashionBlocksComponent } from './componet/stu-view-fashion-blocks/stu-view-fashion-blocks.component';
 import { StudentDashBoradComponent } from './componet/student-dash-borad/student-dash-borad.component';
+import { AdminLoginComponent } from './componet/admin-login/admin-login.component';
 // import { HomeModule } from './home/home/home.module';
 
 
@@ -56,6 +57,7 @@ import { StudentDashBoradComponent } from './componet/student-dash-borad/student
     StuViewFashionBlocksComponent,
     
     StudentDashBoradComponent,
+          AdminLoginComponent,
 
   ],
   imports: [

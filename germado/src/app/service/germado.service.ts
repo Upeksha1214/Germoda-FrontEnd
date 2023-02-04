@@ -6,17 +6,17 @@ import { environment } from 'src/environment/environment';
   providedIn: 'root'
 })
 export class GermadoService {
-
-<<<<<<< HEAD
+  
   url_register="http://localhost:8000/student/"
-=======
-  url_register=environment['url_register'] ?? ""
->>>>>>> d015b7f49f209bb75114ab7fe87a0ee35cfd0aff
-
+  url_studentLogin="http://localhost:8000/student/login"
 
   constructor(private http:HttpClient) {}
 
   registerStudent(data:any){
     return this.http.post(this.url_register,data).subscribe()
+  }
+  
+  studentLogin(data:any){
+    return this.http.post(this.url_studentLogin,data).subscribe()
   }
 }
