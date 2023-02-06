@@ -10,6 +10,9 @@ export class GermadoService {
   url_signUp="http://localhost:8000/student/"
   url_studentLogin="http://localhost:8000/student/login"
   url_registerTheClass="http://localhost:8000/register"
+  url_arrangeTheClass="http://localhost:8000/onlineClass"
+  url_marks="http://localhost:8000/marks"
+
 
   constructor(private http:HttpClient) {}
 
@@ -23,6 +26,14 @@ export class GermadoService {
 
   registerClass(data:any){
     return this.http.post(this.url_registerTheClass,data).subscribe()
+  }
+
+  arrangeTheClass(data:any){
+    return this.http.post(this.url_arrangeTheClass,data).subscribe()
+  }
+
+  marks(data:any){
+    return this.http.post(this.url_marks,data).subscribe()
   }
   
 }

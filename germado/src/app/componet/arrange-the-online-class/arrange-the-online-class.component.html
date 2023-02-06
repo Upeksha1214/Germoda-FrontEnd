@@ -11,46 +11,58 @@
           <div class="card-body p-4 p-md-5">
             <h3 class="mb-4 pb-2 pb-md-0 mb-md-5 px-md-2" style="color: #1435ca;">Arrange The Online Class</h3>
 
-            <form class="px-md-2" style="color: #1435ca;">
+            <form class="px-md-2" style="color: #1435ca;" (ngSubmit)="onSubmit(arrangeTheClass)" #arrangeTheClass="ngForm">
 
               <div class="form-outline mb-4">
                 <input type="text" id="form3Example1q" class="form-control" 
+                name="registerId"
+                [(ngModel)]="saveData.classId" #onlineClzId="ngModel" (change)="inputChange(onlineClzId)"
                 />
                 <label class="form-label" for="form3Example1q">Class Id</label>
               </div>
 
-              <div class="row">
-                <div class="col-md-6 mb-4">
+              
+                <div class="form-outline mb-4">
 
                   <div class="form-outline datepicker">
                     <input type="text" class="form-control" id="form3Example1q" 
+                    name="className"
+                    [(ngModel)]="saveData.className" #onlineClzName="ngModel" (change)="inputChange(onlineClzName)"
                     />
                     <label for="form-label" class="form-label">Class Name</label>
                   </div>
-
                 </div>
-                <div class="col-md-6 mb-4">
-
-                </div>
-              </div>
+              
 
               <div class="form-outline mb-4">
-                  <input type="text" id="form3Example1q" class="form-control" />
+                  <input type="text" id="form3Example1q" class="form-control"
+                   name="duration"
+                  [(ngModel)]="saveData.duration" #onlineClzduration="ngModel" (change)="inputChange(onlineClzduration)"
+                   />
                   <label class="form-label" for="form3Example1q">Duration</label>
                 </div>
 
                 <div class="form-outline mb-4">
-                  <input type="date" id="form3Example1q" class="form-control" style="color: #1435ca;" />
+                  <input type="date" id="form3Example1q" class="form-control" style="color: #1435ca;"
+                  name="date"
+                  [(ngModel)]="saveData.date" #onlineClzDate="ngModel" (change)="inputChange(onlineClzDate)"
+                  />
                   <label class="form-label" for="form3Example1q">Date</label>
                 </div>
 
                 <div class="form-outline mb-4">
-                  <input type="time" id="form3Example1q" class="form-control" style="color: #1435ca;" />
+                  <input type="time" id="form3Example1q" class="form-control" style="color: #1435ca;"
+                  name="time"
+                  [(ngModel)]="saveData.time" #onlineClzTime="ngModel" (change)="inputChange(onlineClzTime)"
+                   />
                   <label class="form-label" for="form3Example1q">Time</label>
                 </div>
 
                 <div class="form-outline mb-4">
-                  <input type="text" id="form3Example1q" class="form-control" />
+                  <input type="text" id="form3Example1q" class="form-control"
+                  name="fee"
+                  [(ngModel)]="saveData.fee" #onlineClzFee="ngModel" (change)="inputChange(onlineClzFee)"
+                    />
                   <label class="form-label" for="form3Example1q">Fee</label>
                 </div>
                 

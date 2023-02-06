@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-
+import { GermadoService } from 'src/app/service/germado.service';
+import { NgForm } from '@angular/forms';
 @Component({
   selector: 'app-arrange-the-online-class',
   templateUrl: './arrange-the-online-class.component.html',
@@ -7,4 +8,22 @@ import { Component } from '@angular/core';
 })
 export class ArrangeTheOnlineClassComponent {
 
+  constructor(private service:GermadoService){}
+
+  saveData={
+      classId: "",
+      className: "",
+      duration: "",
+      date: "",
+      fee: "",
+      time: "",
+  }
+
+  inputChange(onlineClass:any){
+    console.log(onlineClass)
+  }
+
+  onSubmit(arrangeTheClass:NgForm){
+    this.service.arrangeTheClass(this.saveData)
+  }
 }
