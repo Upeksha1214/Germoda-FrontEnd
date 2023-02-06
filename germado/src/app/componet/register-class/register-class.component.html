@@ -10,10 +10,12 @@
             <div class="card-body p-4 p-md-5">
               <h3 class="mb-4 pb-2 pb-md-0 mb-md-5 px-md-2">Registration Info</h3>
   
-              <form class="px-md-2">
+              <form class="px-md-2" (ngSubmit)="onSubmit(registerClass)" #registerClass="ngForm">
   
                 <div class="form-outline mb-4">
-                  <input type="text" id="form3Example1q" class="form-control" />
+                  <input type="text" id="form3Example1q" class="form-control" 
+                  name="registerId"
+                  [(ngModel)]="saveData.registerId" #rId="ngModel" (change)="inputChange(rId)" />
                   <label class="form-label" for="form3Example1q">Register Id</label>
                 </div>
   
@@ -21,7 +23,9 @@
                   <div class="col-md-6 mb-4">
   
                     <div class="form-outline datepicker">
-                      <input type="date" class="form-control" id="exampleDatepicker1" />
+                      <input type="date" class="form-control" id="exampleDatepicker1" 
+                      name="registerDate"
+                      [(ngModel)]="saveData.registerDate" #rDate="ngModel" (change)="inputChange(rDate)" />
                       <label for="exampleDatepicker1" class="form-label">Register Date</label>
                     </div>
   
@@ -32,17 +36,24 @@
                 </div>
 
                 <div class="form-outline mb-4">
-                    <input type="text" id="form3Example1q" class="form-control" />
+                    <input type="text" id="form3Example1q" class="form-control" 
+                    name="studentId"
+                      [(ngModel)]="saveData.studentId" #rSId="ngModel" (change)="inputChange(rSId)"
+                    />
                     <label class="form-label" for="form3Example1q">Student Id</label>
                   </div>
 
                   <div class="form-outline mb-4">
-                    <input type="time" id="form3Example1q" class="form-control" />
+                    <input type="time" id="form3Example1q" class="form-control" 
+                    name="time"
+                      [(ngModel)]="saveData.time" #rTime="ngModel" (change)="inputChange(rTime)"/>
                     <label class="form-label" for="form3Example1q">Time</label>
                   </div>
 
                   <div class="form-outline mb-4">
-                    <input type="text" id="form3Example1q" class="form-control" />
+                    <input type="text" id="form3Example1q" class="form-control" 
+                    name="payment"
+                      [(ngModel)]="saveData.payment" #rPayment="ngModel" (change)="inputChange(rPayment)"/>
                     <label class="form-label" for="form3Example1q">Payment</label>
                   </div>
                   

@@ -36,19 +36,19 @@ export class LoginComponent implements OnInit {
 
     this.docService.studentLogin(loginForm.value)
 
-      .subscribe(response => {
-        if (response == '0') {
-          this.email_Validation = true;
-        }
+      // .subscribe(response => {
+      //   if (response == '0') {
+      //     this.email_Validation = true;
+      //   }
 
-        else if (response == '1') {
-          this.password_Validation = true;
-        }
+      //   else if (response == '1') {
+      //     this.password_Validation = true;
+      //   }
 
-        else if(response == '2') {
-          this.router.navigate(['/'])
-        }
-      })
+      //   else if(response == '2') {
+      //     this.router.navigate(['/'])
+      //   }
+      // })
   } 
 
 

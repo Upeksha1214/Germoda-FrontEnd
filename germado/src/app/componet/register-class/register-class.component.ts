@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { NgForm } from '@angular/forms';
+import { GermadoService } from 'src/app/service/germado.service';
 
 @Component({
   selector: 'app-register-class',
@@ -7,4 +9,23 @@ import { Component } from '@angular/core';
 })
 export class RegisterClassComponent {
 
+
+  constructor(private service:GermadoService){}
+
+  saveData={
+    registerId:"",
+    registerDate:"",
+    studentId:"",
+    time:"",
+    payment:"",
+
+  }
+  
+  inputChange(register:any){
+    console.log(register)
+  }
+  
+  onSubmit(registerClass:NgForm){
+    this.service.registerClass(this.saveData)
+  }
 }
