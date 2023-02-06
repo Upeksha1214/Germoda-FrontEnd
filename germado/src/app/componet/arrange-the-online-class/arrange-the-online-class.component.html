@@ -1,55 +1,115 @@
 <app-admin-dash-board></app-admin-dash-board>
-<section>
-    <form>
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="inputEmail4">Time</label>
-            <input type="text" class="form-control" id="inputEmail4" placeholder="Time">
-          </div>
-          <br>
-          <div class="form-group col-md-6">
-            <label for="inputPassword4">Durations</label>
-            <input type="text" class="form-control" id="inputPassword4" placeholder="Durations">
-          </div>
-          <div class="form-group col-md-6">
-            <label for="inputPassword4">Fees</label>
-            <input type="text" class="form-control" id="inputPassword4" placeholder="Fees">
+<br><br> 
+<section >
+  <div class="container py-5 h-100" style="background-color: #bb8fc4;">
+    <div class="row d-flex justify-content-center align-items-center h-100" >
+      <div class="col-lg-8 col-xl-6">
+        <div class="card rounded-3">
+          <!-- <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-registration/img3.webp"
+            class="w-100" style="border-top-left-radius: .3rem; border-top-right-radius: .3rem;"
+            alt="Sample photo"> -->
+          <div class="card-body p-4 p-md-5">
+            <h3 class="mb-4 pb-2 pb-md-0 mb-md-5 px-md-2" style="color: #1435ca;">Arrange The Online Class</h3>
+
+            <form class="px-md-2" style="color: #1435ca;">
+
+              <div class="form-outline mb-4">
+                <input type="text" id="form3Example1q" class="form-control" 
+                />
+                <label class="form-label" for="form3Example1q">Class Id</label>
+              </div>
+
+              <div class="row">
+                <div class="col-md-6 mb-4">
+
+                  <div class="form-outline datepicker">
+                    <input type="text" class="form-control" id="form3Example1q" 
+                    />
+                    <label for="form-label" class="form-label">Class Name</label>
+                  </div>
+
+                </div>
+                <div class="col-md-6 mb-4">
+
+                </div>
+              </div>
+
+              <div class="form-outline mb-4">
+                  <input type="text" id="form3Example1q" class="form-control" />
+                  <label class="form-label" for="form3Example1q">Duration</label>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <input type="date" id="form3Example1q" class="form-control" style="color: #1435ca;" />
+                  <label class="form-label" for="form3Example1q">Date</label>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <input type="time" id="form3Example1q" class="form-control" style="color: #1435ca;" />
+                  <label class="form-label" for="form3Example1q">Time</label>
+                </div>
+
+                <div class="form-outline mb-4">
+                  <input type="text" id="form3Example1q" class="form-control" />
+                  <label class="form-label" for="form3Example1q">Fee</label>
+                </div>
+                
+              <button type="submit" class="btn btn-success btn-lg mb-1">Submit</button>
+
+            </form>
+
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+  <br> <br> 
+ </section>
+ <section>
+  <table class="table table-hover" style="background-color:#546de5;">
+    <thead >
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Class Id</th>
+        <th scope="col">Class Name</th>
+        <th scope="col">Duration</th>
+        <th scope="col">Date</th>
+        <th scope="col">Time</th>
+        <th scope="col">Fee</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+       
         
-        <button type="submit" class="btn btn-primary" style="position: relative;left:450px;">Add</button>
-        <button type="submit" class="btn btn-primary" style="position: relative;left:475px;">Update</button>
-        <button type="submit" class="btn btn-primary" style="position: relative;left:500px;">Delete</button>
-      </form>
-      <section>
-        <table class="table table-hover" style="background-color:#546de5;">
-            <thead>
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">Time</th>
-                <th scope="col">Durations</th>
-                <th scope="col">Fees</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row">1</th>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td></td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <th scope="row">3</th>
-                <td colspan="2"></td>
-                <td></td>
-              </tr>
-            </tbody>
-          </table>
-      </section>
-</section>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td colspan="2"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+ </section>
