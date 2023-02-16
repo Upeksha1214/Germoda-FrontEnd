@@ -1,6 +1,6 @@
 .main {
     font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    background-color: #C886E5;
+  
     font-weight: 300;
 }
 
@@ -41,11 +41,12 @@ a:hover {
 
 h2 {
     font-size: 20px;
-    color: #fff;
+    color: #674188;
 }
 
 .custom-table {
     min-width: 900px;
+    background-color: #C886E5;
 }
 
 .custom-table thead tr,
