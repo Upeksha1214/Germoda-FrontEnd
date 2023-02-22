@@ -19,6 +19,7 @@ import { StudentViewVideosComponent } from './componet/student-view-videos/stude
 import { StuViewFashionBlocksComponent } from './componet/stu-view-fashion-blocks/stu-view-fashion-blocks.component';
 import { ClassSheduleComponent } from './componet/class-shedule/class-shedule.component';
 import { AdminLoginComponent } from './componet/admin-login/admin-login.component';
+import { CourseAddingComponent } from './componet/course-adding/course-adding.component';
 
 
 
@@ -43,7 +44,8 @@ const routes: Routes = [
   {path:'viewVideo', component: StudentViewVideosComponent },
   {path:'fashionBlocks', component: StuViewFashionBlocksComponent },
   {path:'classShedule', component: ClassSheduleComponent },
-  {path:'adminLogin', component: AdminLoginComponent}
+  {path:'adminLogin', component: AdminLoginComponent},
+  {path:'courseAdding', component: CourseAddingComponent}
 
 ];
 
