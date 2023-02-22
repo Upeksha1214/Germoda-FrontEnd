@@ -20,6 +20,8 @@ import { StuViewFashionBlocksComponent } from './componet/stu-view-fashion-block
 import { ClassSheduleComponent } from './componet/class-shedule/class-shedule.component';
 import { AdminLoginComponent } from './componet/admin-login/admin-login.component';
 import { CourseAddingComponent } from './componet/course-adding/course-adding.component';
+import { PaymentLoginComponent } from './componet/payment-login/payment-login.component';
+import { PaymentComponent } from './componet/payment/payment.component';
 
 
 
@@ -45,7 +47,9 @@ const routes: Routes = [
   {path:'fashionBlocks', component: StuViewFashionBlocksComponent },
   {path:'classShedule', component: ClassSheduleComponent },
   {path:'adminLogin', component: AdminLoginComponent},
-  {path:'courseAdding', component: CourseAddingComponent}
+  {path:'courseAdding', component: CourseAddingComponent},
+  {path:'paymentLogin', component: PaymentLoginComponent},
+  {path:'payment', component: PaymentComponent},
 
 ];
 

@@ -28,6 +28,8 @@ import { StuViewFashionBlocksComponent } from './componet/stu-view-fashion-block
 import { StudentDashBoradComponent } from './componet/student-dash-borad/student-dash-borad.component';
 import { AdminLoginComponent } from './componet/admin-login/admin-login.component';
 import { CourseAddingComponent } from './componet/course-adding/course-adding.component';
+import { PaymentLoginComponent } from './componet/payment-login/payment-login.component';
+import { PaymentComponent } from './componet/payment/payment.component';
 // import { HomeModule } from './home/home/home.module';
 
 
@@ -60,6 +62,8 @@ import { CourseAddingComponent } from './componet/course-adding/course-adding.co
     StudentDashBoradComponent,
           AdminLoginComponent,
           CourseAddingComponent,
+          PaymentLoginComponent,
+          PaymentComponent,
 
   ],
   imports: [
