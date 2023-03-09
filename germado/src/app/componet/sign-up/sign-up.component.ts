@@ -3,6 +3,7 @@ import { NgForm } from '@angular/forms';
 import { GermadoService } from 'src/app/service/germado.service';
 import Swal from 'sweetalert2';
 
+
 @Component({
   selector: 'app-sign-up',
   templateUrl: './sign-up.component.html',
@@ -17,6 +18,7 @@ export class SignUpComponent {
 
   constructor(private service:GermadoService){}
 
+  
 
   saveData={
     studentId:"",

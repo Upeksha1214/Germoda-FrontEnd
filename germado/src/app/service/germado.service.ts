@@ -17,11 +17,11 @@ export class GermadoService {
   constructor(private http:HttpClient) {}
 
   registerStudent(data:any){
-    return this.http.post(this.url_signUp,data).subscribe()
+    return this.http.post(this.url_signUp,data,).subscribe()
   }
   
   studentLogin(data:any){
-    return this.http.post(this.url_studentLogin,data).subscribe()
+    return this.http.post(this.url_studentLogin,data,).subscribe()
   }
 
   registerClass(data:any){

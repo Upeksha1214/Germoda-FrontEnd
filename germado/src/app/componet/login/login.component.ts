@@ -3,6 +3,7 @@ import { GermadoService } from 'src/app/service/germado.service';
 import { HttpClient } from '@angular/common/http';
 import { Router, Route } from '@angular/router';
 import { NgForm } from '@angular/forms';
+import { Token } from '@angular/compiler';
 
 
 @Component({
@@ -34,8 +35,9 @@ export class LoginComponent implements OnInit {
 
   onsubmit(loginForm: NgForm){
 
-    this.docService.studentLogin(loginForm.value)
-
+   const Token=this.docService.studentLogin(loginForm.value) 
+    console.log(Token)
+    
       // .subscribe(response => {
       //   if (response == '0') {
       //     this.email_Validation = true;
