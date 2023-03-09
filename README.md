@@ -1,4 +1,3 @@
-# Germoda-FrontEnd
 <h1 align="center">Angular - The modern web developer's platform.</h1>
 
 <p align="center">
