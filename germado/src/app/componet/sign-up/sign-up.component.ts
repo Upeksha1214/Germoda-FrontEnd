@@ -22,7 +22,7 @@ export class SignUpComponent {
 
   saveData={
     studentId:"",
-    name:"",
+    studentName:"",
     email:"",
     password:"",
     address:"",

@@ -17,7 +17,7 @@
               <th scope="col"> studentId</th>
               <th scope="col">Name</th>
               <th scope="col">email</th>
-              <th scope="col">password</th>
+             
               <th scope="col">address</th>
               <th scope="col">nic</th>
               <th scope="col"> gender</th>
@@ -29,66 +29,28 @@
             </tr>
           </thead>
           <tbody>
-            <tr scope="row">
-              <td>S001</td>
-              <td>Upeksha</td>
-              <td>upekshasachintha@gamil.com</td>
-              <td>1234</td>
-              <td>Galle</td>
-              <td>199934910140</td>
-              <td>male</td>
-              <td>1999/12/14</td>
-              <td>it</td>
-              <td>6months</td>
-              <td>Sri lanaka</td>
-              <td>South</td>
+
+            <tr scope="row" *ngFor="let student of allStudent; index as i; first as isFirst">
+              <!-- {{i}}/{{users.length}}. {{user}} <span *ngIf="isFirst">default</span> -->
+
+              <td>{{student.studentId}}</td>
+              <td>{{student.studentName}}</td>
+              <td>{{student.email}}</td>
+              <td>{{student.course}}</td>
+              <td>{{student.birthday}}</td>
+              <td>{{student.gender}}</td>
+              <td>{{student.NIC}}</td>
+              <td>{{student.address}}</td>
+             
+              <td>{{student.courseName}}</td>
+              <td>{{student.courseDuration}}</td>
+              <td>{{student.country}}</td>
+              <td>{{student.state}}</td>
+            </tr>
+
+            <tr  >
 
             </tr>
-
-            <tr>
-              <td>S001</td>
-              <td>Upeksha</td>
-              <td>upekshasachintha@gamil.com</td>
-              <td>1234</td>
-              <td>Galle</td>
-              <td>199934910140</td>
-              <td>male</td>
-              <td>1999/12/14</td>
-              <td>it</td>
-              <td>6months</td>
-              <td>Sri lanaka</td>
-              <td>South</td>
-            </tr>
-            
-            <tr>
-              <td>S001</td>
-              <td>Upeksha</td>
-              <td>upekshasachintha@gamil.com</td>
-              <td>1234</td>
-              <td>Galle</td>
-              <td>199934910140</td>
-              <td>male</td>
-              <td>1999/12/14</td>
-              <td>it</td>
-              <td>6months</td>
-              <td>Sri lanaka</td>
-              <td>South</td>
-            </tr>
-            
-            <tr>
-              <td>S001</td>
-              <td>Upeksha</td>
-              <td>upekshasachintha@gamil.com</td>
-              <td>1234</td>
-              <td>Galle</td>
-              <td>199934910140</td>
-              <td>male</td>
-              <td>1999/12/14</td>
-              <td>it</td>
-              <td>6months</td>
-              <td>Sri lanaka</td>
-              <td>South</td>
-            <tr>
 
             <tr>
               <td></td>
