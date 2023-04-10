@@ -8,10 +8,9 @@ import { environment } from 'src/environment/environment';
 export class GermadoService {
   
   url_signUp="http://localhost:3000/api/student"
-
   url_studentLogin="http://localhost:8000/student/login"
-  url_registerTheClass="http://localhost:8000/register"
-  url_arrangeTheClass="http://localhost:3000/api/online-class"
+  url_registerTheClass="http://localhost:3000/api/registration"
+  url_arrangeTheClass="http://localhost:3000/online-class"
   url_marks="http://localhost:3000/api/marks"
 
 
@@ -29,7 +28,7 @@ export class GermadoService {
   }
 
   registerClass(data:any){
-    return this.http.post(this.url_registerTheClass,data).subscribe()
+    return this.http.post(this.url_registerTheClass,{registration:{...data}}).subscribe()
   }
 
   arrangeTheClass(data:any){

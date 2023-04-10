@@ -16,7 +16,7 @@ export class RegisterClassComponent {
     registerId:"",
     registerDate:"",
     studentId:"",
-    time:"",
+    registerTime:"",
     payment:"",
 
   }
