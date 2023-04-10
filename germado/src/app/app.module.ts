@@ -31,6 +31,8 @@ import { CourseAddingComponent } from './componet/course-adding/course-adding.co
 import { PaymentLoginComponent } from './componet/payment-login/payment-login.component';
 import { PaymentComponent } from './componet/payment/payment.component';
 import { SignformWatchingVideoComponent } from './componet/signform-watching-video/signform-watching-video.component';
+import { MarksComponent } from './componet/marks/marks.component';
+import { InquiryComponent } from './componet/inquiry/inquiry.component';
 // import { HomeModule } from './home/home/home.module';
 
 
@@ -66,6 +68,8 @@ import { SignformWatchingVideoComponent } from './componet/signform-watching-vid
           PaymentLoginComponent,
           PaymentComponent,
           SignformWatchingVideoComponent,
+          MarksComponent,
+          InquiryComponent,
 
   ],
   imports: [
