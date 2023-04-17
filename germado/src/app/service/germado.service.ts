@@ -7,14 +7,14 @@ import { environment } from 'src/environment/environment';
 })
 export class GermadoService {
 
-  url_root="https://www.germoda.com"
+  url_root="https://www.germoda.com/"
   
   url_signUp=this.url_root+"api/student"
   url_studentLogin="http://localhost:8000/student/login"
   url_registerTheClass=this.url_root+"api/registration"
   url_arrangeTheClass=this.url_root+"api/online-class"
-  url_marks=+this.url_root+"/api/marks"
-  url_inquiry=this.url_root+"/api/inquiry"
+  url_marks=this.url_root+"api/marks"
+  url_inquiry=this.url_root+"api/inquiry"
 
 
   constructor(private http:HttpClient) {}
