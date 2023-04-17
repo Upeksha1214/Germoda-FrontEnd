@@ -38,6 +38,8 @@ export class SignUpComponent {
      
   }
 
+  
+
   inputChange(student:any){
     console.log(student)
   }

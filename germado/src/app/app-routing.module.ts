@@ -23,6 +23,7 @@ import { CourseAddingComponent } from './componet/course-adding/course-adding.co
 import { PaymentLoginComponent } from './componet/payment-login/payment-login.component';
 import { PaymentComponent } from './componet/payment/payment.component';
 import { MarksComponent } from './componet/marks/marks.component';
+import { InquiryComponent } from './componet/inquiry/inquiry.component';
 
 
 
@@ -52,7 +53,7 @@ const routes: Routes = [
   {path:'paymentLogin', component: PaymentLoginComponent},
   {path:'payment', component: PaymentComponent},
   {path:'marks',component:MarksComponent},
-  {path:'inquiry',component:IncomeComponent}
+  {path:'inquiry',component:InquiryComponent}
 
 ];
 

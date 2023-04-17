@@ -17,6 +17,13 @@ export class ArrangeTheOnlineClassComponent {
       date: "",
       fee: "",
       time: "",
+      meetingUrlId:"",
+  }
+
+
+  meetingTitle=''
+  addTitle(meetingTitle:string){
+    this.saveData.meetingUrlId=meetingTitle.split(" ").join('-') + parseInt((Math.random() * 1000).toString())
   }
 
   inputChange(onlineClass:any){

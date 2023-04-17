@@ -50,6 +50,13 @@
                 <label class="form-label" for="form3Example1q">Time</label>
               </div>
 
+
+              <div class="form-outline mb-4">
+                <input type="text" id="form3Example1q" class="form-control" style="color: #1435ca;" name="meetTitle"
+                  [(ngModel)]="meetingTitle" #meetTitle="ngModel" (change)="addTitle(meetingTitle)" />
+                <label class="form-label" for="form3Example1q">Meet Title</label>
+              </div>
+
               <div class="form-outline mb-4">
                 <input type="text" id="form3Example1q" class="form-control" name="fee" [(ngModel)]="saveData.fee"
                   #onlineClzFee="ngModel" (change)="inputChange(onlineClzFee)" />
