@@ -17,7 +17,6 @@
               <th scope="col"> studentId</th>
               <th scope="col">Name</th>
               <th scope="col">email</th>
-             
               <th scope="col">address</th>
               <th scope="col">nic</th>
               <th scope="col"> gender</th>
@@ -36,31 +35,16 @@
               <td>{{student.studentId}}</td>
               <td>{{student.studentName}}</td>
               <td>{{student.email}}</td>
-              <td>{{student.course}}</td>
-              <td>{{ student.birthday | date: 'dd-MM-yyyy' }}</td>
-              <td>{{student.gender}}</td>
-              <td>{{student.NIC}}</td>
               <td>{{student.address}}</td>
-             
+              <td>{{student.NIC}}</td>
+              <td>{{student.gender}}</td>
+              <td>{{ student.birthday | date: 'dd-MM-yyyy' }}</td>
               <td>{{student.courseName}}</td>
+              <td>{{student.course}}</td>
               <td>{{student.courseDuration}}</td>
               <td>{{student.country}}</td>
               <td>{{student.state}}</td>
             </tr>
-
-            <tr  >
-
-            </tr>
-
-            <tr>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-              <td></td>
-            </tr>
-
           </tbody>
         </table>
       </div>

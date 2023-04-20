@@ -11,15 +11,14 @@
           <div class="card-body p-4 p-md-5">
             <h3 class="mb-4 pb-2 pb-md-0 mb-md-5 px-md-2" style="color: #1435ca;">Arrange The Online Class</h3>
 
-            <form class="px-md-2" style="color: #1435ca;" (ngSubmit)="onSubmit(arrangeTheClass)"
-              #arrangeTheClass="ngForm">
+            <form class="px-md-2" style="color: #1435ca;"
+              #arrangeTheClass="ngForm" >
 
-              <div class="form-outline mb-4">
+              <!-- <div class="form-outline mb-4">
                 <input type="text" id="form3Example1q" class="form-control" name="registerId"
                   [(ngModel)]="saveData.classId" #onlineClzId="ngModel" (change)="inputChange(onlineClzId)" />
                 <label class="form-label" for="form3Example1q">Class Id</label>
-              </div>
-
+              </div> -->
 
               <div class="form-outline mb-4">
 
@@ -53,9 +52,11 @@
 
               <div class="form-outline mb-4">
                 <input type="text" id="form3Example1q" class="form-control" style="color: #1435ca;" name="meetTitle"
-                  [(ngModel)]="meetingTitle" #meetTitle="ngModel" (change)="addTitle(meetingTitle)" />
+                  [(ngModel)]="meetingTitle" (change)="addTitle(meetingTitle)" />
                 <label class="form-label" for="form3Example1q">Meet Title</label>
               </div>
+
+              
 
               <div class="form-outline mb-4">
                 <input type="text" id="form3Example1q" class="form-control" name="fee" [(ngModel)]="saveData.fee"
@@ -63,9 +64,9 @@
                 <label class="form-label" for="form3Example1q">Fee</label>
               </div>
 
-              <button type="submit" class="btn btn-success btn-lg mb-1" id="submit">Submit</button>
-              <button class="btn btn-primary btn-lg mb-1" id="update">Update</button>
-              <button class="btn btn-danger btn-lg mb-1" id="delete">Delete</button>
+              <button class="btn btn-success btn-lg mb-1" id="submit" (click)="onSubmit">Submit</button>
+              <button class="btn btn-primary btn-lg mb-1" id="update" (click)="updateMeeting()">Update</button>
+              <button class="btn btn-danger btn-lg mb-1" id="delete" (click)="deleteMeeting()">Delete</button>
 
             </form>
 
@@ -82,46 +83,26 @@
     <thead>
       <tr>
         <th scope="col">#</th>
-        <th scope="col">Class Id</th>
+        <!-- <th scope="col">Class Id</th> -->
         <th scope="col">Class Name</th>
         <th scope="col">Duration</th>
         <th scope="col">Date</th>
         <th scope="col">Time</th>
+        <th scope="col">Meet Title</th>
         <th scope="col">Fee</th>
       </tr>
     </thead>
     <tbody>
-      <tr>
+      <tr scope="row" *ngFor="let onlineClass of allclasses; index as i; first as isFirst" (click)="this.startUpdateOnline(onlineClass)" >
         <th scope="row">1</th>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-
-
+        <td>{{onlineClass.className}}</td>
+        <td>{{onlineClass.duration}}</td>
+        <td>{{onlineClass.date}}</td>
+        <td>{{onlineClass.time}}</td>
+        <td>{{onlineClass.meetingUrlId}}</td>
+        <td>{{onlineClass.fee}}</td>
       </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td colspan="2"></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
+     
     </tbody>
   </table>
 </section>
