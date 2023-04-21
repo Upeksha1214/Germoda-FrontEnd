@@ -11,10 +11,11 @@
           <div class="card-body p-4 p-md-5">
             <h3 class="mb-4 pb-2 pb-md-0 mb-md-5 px-md-2" style="color: #1435ca;">Course Adding </h3>
 
-            <form class="px-md-2" style="color: #1435ca;" >
+            <form class="px-md-2" style="color: #1435ca;" (ngSubmit)="onSubmit(coursesAdding)" #coursesAdding="ngForm"  >
 
               <div class="form-outline mb-4">
-                <input type="text" id="form3Example1q" class="form-control" />
+                <input type="text" id="form3Example1q" class="form-control" name="courseId"
+                [(ngModel)]="saveData.courseId" #couId="ngModel" (change)="inputChange(couId)"/>
                 <label class="form-label" for="form3Example1q">Course Id</label>
               </div>
 
@@ -22,40 +23,46 @@
               <div class="form-outline mb-4">
 
                 <div class="form-outline datepicker">
-                  <input type="text" class="form-control" id="form3Example1q" />
+                  <input type="text" class="form-control" id="form3Example1q" name="courseName"
+                  [(ngModel)]="saveData.courseName" #couName="ngModel" (change)="inputChange(couName)"/>
                   <label for="form-label" class="form-label">Course Name</label>
                 </div>
               </div>
 
 
               <div class="form-outline mb-4">
-                <input type="text" id="form3Example1q" class="form-control" />
+                <input type="text" id="form3Example1q" class="form-control" name="courseCategory"
+                [(ngModel)]="saveData.courseCategory" #couCategory="ngModel" (change)="inputChange(couCategory)"/>
                 <label class="form-label" for="form3Example1q">Course Category</label>
               </div>
 
               <div class="form-outline mb-4">
-                <input type="text" id="form3Example1q" class="form-control" />
+                <input type="text" id="form3Example1q" class="form-control" name="courseContanet"
+                [(ngModel)]="saveData.courseContanet" #couContanet="ngModel" (change)="inputChange(couContanet)"/>
                 <label class="form-label" for="form3Example1q">Course Contanet</label>
               </div>
 
               <div class="form-outline mb-4">
-                <input type="text" id="form3Example1q" class="form-control" />
+                <input type="text" id="form3Example1q" class="form-control"  name="courseDuration"
+                [(ngModel)]="saveData.courseDuration" #couDuration="ngModel" (change)="inputChange(couDuration)"/>
                 <label class="form-label" for="form3Example1q">Course Duration</label>
               </div>
 
               <div class="form-outline mb-4">
-                <input type="text" id="form3Example1q" class="form-control" />
+                <input type="number" id="form3Example1q" class="form-control" name="courseFee"
+                [(ngModel)]="saveData.courseFee" #couFee="ngModel" (change)="inputChange(couFee)" />
                 <label class="form-label" for="form3Example1q">Corse Fee</label>
               </div>
 
               <div class="form-outline mb-4">
-                <input type="text" id="form3Example1q" class="form-control" />
+                <input type="number" id="form3Example1q" class="form-control" name="courseDiscount"
+                [(ngModel)]="saveData.courseDiscount" #couDiscount="ngModel" (change)="inputChange(couDiscount)" />
                 <label class="form-label" for="form3Example1q">Course Discount</label>
               </div>
 
-              <button type="submit" class="btn btn-success btn-lg mb-1" id="submit">Submit</button>
-              <button class="btn btn-primary btn-lg mb-1" id="update">Update</button>
-              <button class="btn btn-danger btn-lg mb-1" id="delete">Delete</button>
+              <button type="submit" class="btn btn-success btn-lg mb-1" id="submit" (click)="onSubmit">Submit</button>
+              <button class="btn btn-primary btn-lg mb-1" id="update" (click)="updateCourse()">Update</button>
+              <button class="btn btn-danger btn-lg mb-1" id="delete" (click)=" deleteCourse()">Delete</button>
 
             </form>
 
@@ -65,4 +72,34 @@
     </div>
   </div>
 </section>
-<br> <br><br>
+<section>
+  <table class="table table-hover" style="background-color:#A58BFF;">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <!-- <th scope="col">Class Id</th> -->
+        <th scope="col">Course Id</th>
+        <th scope="col">Course Name</th>
+        <th scope="col">Course Category</th>
+        <th scope="col">Course Contanet</th>
+        <th scope="col">Course Duration</th>
+        <th scope="col">Corse Fee</th>
+        <th scope="col">Course Discount</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr scope="row" *ngFor="let course of allCorse; index as i; first as isFirst" (click)="this.startCourseUpdating(course)" >
+        <th scope="row"></th>
+        <td>{{course.courseId}}</td>
+        <td>{{course.courseName}}</td>
+        <td>{{course.courseCategory}}</td>
+        <td>{{course.courseContanet}}</td>
+        <td>{{course.courseDuration}}</td>
+        <td>{{course.courseFee}}</td>
+        <td>{{course.courseDiscount}}</td>
+      </tr>
+     
+    </tbody>
+  </table>
+</section>
+<!-- <br> <br><br> -->

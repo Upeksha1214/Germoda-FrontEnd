@@ -16,6 +16,7 @@ export class GermadoService {
   url_arrangeTheClass=this.url_root+"api/online-class"
   url_marks=this.url_root+"api/marks"
   url_inquiry=this.url_root+"api/inquiry"
+  url_course=this.url_root+"api/course"
 
 
   constructor(private http:HttpClient) {}
@@ -68,6 +69,28 @@ export class GermadoService {
   }
 
   //---------------------------online class end-------------------------------------------
+
+
+  //---------------------------Course Start---------------------------------------------
+
+  coursesAdding(data:any){
+    return this.http.post(this.url_course,{course:{...data}}).subscribe()
+  }
+
+  allCourses(){
+    return this.http.get(this.url_course,{headers:{Authorization : "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVwZWtzaGEyMSIsInN1YiI6IjY0MDZjMWJmNWQ3ODNlMzRjYWViMjYzNyIsInJvbGUiOiJhZG1pbiIsImlhdCI6MTY3ODE3MDYyOH0.qpD4qEjz0GfQaPNNhR7_5ci5JV9oQ_u1JThI0X8rPkQ"}})
+  }
+
+  courseUpated(data:any){
+    return this.http.patch(this.url_course+"/"+data._id,{data},{headers:{ 'Authorization' : 'Bearer '+ localStorage.getItem('germoda-token') } }).subscribe()
+  }
+
+  courseDelete(data:any){
+    return this.http.delete(this.url_course+"/"+data._id,{headers:{ 'Authorization' : 'Bearer '+ localStorage.getItem('germoda-token') } })
+  }
+  
+  //---------------------------Course End----------------------------------------------
+
   marks(data:any){
     return this.http.post(this.url_marks,data).subscribe()
   }
