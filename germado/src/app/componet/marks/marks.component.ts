@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { GermadoService } from 'src/app/service/germado.service';
 
 @Component({
   selector: 'app-marks',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./marks.component.css']
 })
 export class MarksComponent {
+  constructor(private service:GermadoService ){}
 
+  
 }
