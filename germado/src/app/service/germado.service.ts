@@ -91,10 +91,13 @@ export class GermadoService {
   
   //---------------------------Course End----------------------------------------------
 
-  marks(data:any){
-    return this.http.post(this.url_marks,data).subscribe()
+  //---------------------------Marks Start----------------------------------------------
+  marksAdding(data:any){
+    return this.http.post(this.url_marks,{marks:{...data}}).subscribe()
   }
   
+  //---------------------------Marks End----------------------------------------------
+
   ininquiryAdding(data:any){
     return this.http.post(this.url_inquiry,{inquiry:{...data}}).subscribe()
   }
